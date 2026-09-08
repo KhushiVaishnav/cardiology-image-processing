@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated masks
+outputs/all_masks/
+outputs/masks/
+outputs/final/
+
+# Keep benchmark report
+!outputs/latency_report.json
+
+# Dataset
+dataset/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
