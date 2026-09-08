@@ -39,6 +39,9 @@ The dataset contains coronary angiography images with annotations for coronary v
 
 The ARCADE dataset is not included in this repository because of dataset size.
 
+Download the ARCADE dataset from Zenodo:
+https://zenodo.org/records/10390295
+
 Download it separately and place it under:
 
 ```text
