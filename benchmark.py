@@ -155,7 +155,7 @@ def main():
     # --------------------------------------------------
 
     report = {
-        "pipeline": "V7 Fast Classical Coronary Enhancement",
+        "pipeline": "V8 Fast Classical Coronary Enhancement",
 
         "dataset": "ARCADE syntax train",
 
