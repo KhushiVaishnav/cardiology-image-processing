@@ -37,11 +37,12 @@ The project uses the ARCADE coronary X-ray angiography dataset.
 
 The dataset contains coronary angiography images with annotations for coronary vessel segments and stenosis.
 
-The dataset is organized under:
+The ARCADE dataset is not included in this repository because of dataset size.
 
+Download it separately and place it under:
+
+```text
 dataset/arcade/
-
-The ARCADE annotations were also used during development to generate coronary vessel masks for evaluation.
 
 ## Pipeline Architecture
 
