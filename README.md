@@ -43,6 +43,7 @@ Download it separately and place it under:
 
 ```text
 dataset/arcade/
+```
 
 ## Pipeline Architecture
 
@@ -135,7 +136,9 @@ Therefore, the optimized pipeline satisfies the latency requirement on the bench
 
 The detailed benchmark results are saved in:
 
+```text
 outputs/latency_report.json
+```
 
 ## 16-bit Support
 
@@ -143,7 +146,9 @@ A dedicated test was performed using a converted 16-bit grayscale image.
 
 Result:
 
+```text
 16-BIT SUPPORT TEST: PASS
+```
 
 The pipeline successfully processed the 16-bit input and produced a valid enhanced output.
 
@@ -153,7 +158,9 @@ A dedicated test was performed using a 3-channel image.
 
 Result:
 
+```text
 3-CHANNEL INPUT TEST: PASS
+```
 
 The pipeline successfully converted and processed the 3-channel input.
 
@@ -189,7 +196,9 @@ The generated masks were used for development and vesselness evaluation and are 
 
 Generated masks are stored under:
 
+```text
 outputs/all_masks/
+```
 
 ## Raw vs Enhanced Results
 
@@ -199,7 +208,9 @@ The enhanced images can be compared with the original ARCADE images to visually 
 
 The processing output is currently saved under:
 
+```text
 outputs/final/
+```
 
 ## How to Run
 
@@ -209,61 +220,83 @@ Create and activate a Python virtual environment if required.
 
 Install the project dependencies:
 
+```text
 pip install -r requirements.txt
+```
 
 **2. Run the Image Processing Pipeline**
 
 Run:
 
+```text
 python run_pipeline.py
+```
 
 The script processes the selected ARCADE sample images and saves the enhanced images in:
 
+```text
 outputs/final/
+```
 
 **3. Run the Latency Benchmark**
 
 Run:
 
+```text
 python benchmark.py
+```
 
 The benchmark measures processing latency and FPS and saves the report to:
 
+```text
 outputs/latency_report.json
+```
 
 **4. Test 16-bit Input**
 
 Run:
 
+```text
 python test_16bit.py
+```
 
 Expected result:
 
+```text
 16-BIT SUPPORT TEST: PASS
+```
 
 **5. Test 3-Channel Input**
 
 Run:
 
+```text
 python test_3channel.py
+```
 
 Expected result:
 
+```text
 3-CHANNEL INPUT TEST: PASS
+```
 
 ## Project Structure
 
+```text
 cardiology_image_processing/
 
 ├── dataset/
 │   └── arcade/
+
 ├── src/
 │   └── pipeline.py
+
 ├── outputs/
 │   ├── all_masks/
 │   ├── masks/
 │   ├── final/
 │   └── latency_report.json
+
 ├── benchmark.py
 ├── create_mask.py
 ├── evaluate_vesselness.py
@@ -280,40 +313,41 @@ cardiology_image_processing/
 ├── view_samples.py
 ├── requirements.txt
 └── README.md
+```
 
 ## Main Files
 
-src/pipeline.py --- Main coronary image enhancement pipeline
+`src/pipeline.py` --- Main coronary image enhancement pipeline
 
-run_pipeline.py --- Runs the pipeline on sample images
+`run_pipeline.py` --- Runs the pipeline on sample images
 
-benchmark.py --- Measures latency and FPS
+`benchmark.py` --- Measures latency and FPS
 
-test_16bit.py --- Tests 16-bit image support
+`test_16bit.py` --- Tests 16-bit image support
 
-test_3channel.py --- Tests 3-channel image support
+`test_3channel.py` --- Tests 3-channel image support
 
-generate_all_masks.py --- Generates coronary vessel masks from ARCADE annotations
+`generate_all_masks.py` --- Generates coronary vessel masks from ARCADE annotations
 
-create_mask.py --- Creates a vessel mask for an individual image
+`create_mask.py` --- Creates a vessel mask for an individual image
 
-evaluate_vesselness.py --- Evaluates vesselness-based enhancement
+`evaluate_vesselness.py` --- Evaluates vesselness-based enhancement
 
-inspect_dataset.py --- Inspects dataset properties
+`inspect_dataset.py` --- Inspects dataset properties
 
-inspect_annotations.py --- Inspects ARCADE annotations
+`inspect_annotations.py` --- Inspects ARCADE annotations
 
-inspect_images.py --- Inspects image formats and intensity ranges
+`inspect_images.py` --- Inspects image formats and intensity ranges
 
-inspect_frangi.py --- Inspects Frangi vesselness responses
+`inspect_frangi.py` --- Inspects Frangi vesselness responses
 
-view_samples.py --- Displays sample dataset images
+`view_samples.py` --- Displays sample dataset images
 
-view_masks.py --- Displays generated vessel masks
+`view_masks.py` --- Displays generated vessel masks
 
-view_results.py --- Displays processing results
+`view_results.py` --- Displays processing results
 
-requirements.txt --- Python dependencies
+`requirements.txt` --- Python dependencies
 
 ## Requirements
 
@@ -327,7 +361,9 @@ The project uses Python and the following main libraries:
 
 Install all required dependencies using:
 
+```text
 pip install -r requirements.txt
+```
 
 ## Limitations
 
